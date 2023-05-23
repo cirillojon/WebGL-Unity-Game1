@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443d7687359815c468cf5bc661624c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 80
+  speed: 35
   boundaryLeft: 167
   boundaryRight: 197
   boundaryTop: -10
@@ -450,8 +450,8 @@ GameObject:
   - component: {fileID: 666043676}
   - component: {fileID: 666043675}
   - component: {fileID: 666043674}
-  - component: {fileID: 666043673}
   - component: {fileID: 666043677}
+  - component: {fileID: 666043678}
   m_Layer: 0
   m_Name: fireball 1
   m_TagString: Untagged
@@ -474,23 +474,6 @@ Transform:
   m_Father: {fileID: 1605192687}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30.133}
---- !u!114 &666043673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666043671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567e8b54cdb87c947ba992ad35bd12fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  detectionRange: 15
-  player: {fileID: 666043672}
-  enemyDamage: 20
-  collisionCooldown: 1
 --- !u!50 &666043674
 Rigidbody2D:
   serializedVersion: 4
@@ -597,6 +580,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.000005364418}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &666043678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666043671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567e8b54cdb87c947ba992ad35bd12fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  detectionRange: 20
+  player: {fileID: 0}
+  enemyDamage: 15
+  collisionCooldown: 1
 --- !u!1 &865680786
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,8 +645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567e8b54cdb87c947ba992ad35bd12fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  detectionRange: 20
+  speed: 27
+  detectionRange: 30
   player: {fileID: 865680787}
   enemyDamage: 5
   collisionCooldown: 1
@@ -875,7 +875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 148.22772, y: 193}
+  m_AnchoredPosition: {x: 873, y: 303}
   m_SizeDelta: {x: 203.3875, y: 166.1519}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145658212
@@ -1095,8 +1095,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -327.96854, y: 208.0315}
-  m_SizeDelta: {x: -703.947, y: -467.063}
+  m_AnchoredPosition: {x: -757.93384, y: 463.54364}
+  m_SizeDelta: {x: -1563.8777, y: -978.0873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359645115
 MonoBehaviour:
@@ -1173,8 +1173,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 347, y: 214}
-  m_SizeDelta: {x: 160, y: 40}
+  m_AnchoredPosition: {x: 735, y: 412}
+  m_SizeDelta: {x: 216.6603, y: 56.998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442897841
 MonoBehaviour:
@@ -1737,8 +1737,8 @@ GameObject:
   - component: {fileID: 1791662847}
   - component: {fileID: 1791662846}
   - component: {fileID: 1791662845}
-  - component: {fileID: 1791662844}
   - component: {fileID: 1791662848}
+  - component: {fileID: 1791662849}
   m_Layer: 0
   m_Name: fireball 2
   m_TagString: Untagged
@@ -1761,23 +1761,6 @@ Transform:
   m_Father: {fileID: 1605192687}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -152.574}
---- !u!114 &1791662844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791662842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567e8b54cdb87c947ba992ad35bd12fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  detectionRange: 15
-  player: {fileID: 1791662843}
-  enemyDamage: 20
-  collisionCooldown: 1
 --- !u!50 &1791662845
 Rigidbody2D:
   serializedVersion: 4
@@ -1884,6 +1867,23 @@ CircleCollider2D:
   m_Offset: {x: -0.0000076293945, y: 0.000002503395}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1791662849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791662842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567e8b54cdb87c947ba992ad35bd12fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  detectionRange: 20
+  player: {fileID: 0}
+  enemyDamage: 15
+  collisionCooldown: 1
 --- !u!1 &1997840260
 GameObject:
   m_ObjectHideFlags: 0

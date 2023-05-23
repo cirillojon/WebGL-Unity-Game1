@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public float speed = 5f;
-    public float detectionRange = 10f;
+    public float speed = 20f;
+    public float detectionRange = 30f;
     public Transform player;
 
     private Rigidbody2D rb;
     private Rigidbody2D playerRb;
 
     // Add a public variable for the enemy's damage amount
-    public float enemyDamage = 10f;
+    public float enemyDamage = 5f;
 
      // Add a variable for collision cooldown time
     public float collisionCooldown = 1f;
